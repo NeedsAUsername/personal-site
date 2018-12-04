@@ -1,6 +1,16 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
 
+.code {
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+	padding: 6px 10px;
+	border-radius: 3px;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+	font-size: .8em;
+}
+
+
 /*
 	Strongly Typed by HTML5 UP
 	html5up.net | @ajlkn
@@ -100,7 +110,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #777;
+		color: #303030;
 		line-height: 1.65em;
 		font-size: 15pt;
 	}

@@ -116,8 +116,7 @@
 			<!-- Banner -->
 				<section id="banner">
 					<div class="container">
-						<p>Use this space for <strong>profound thoughts</strong>.<br />
-						Or an enormous ad. Whatever.</p>
+						<p>Featured Post</p>
 					</div>
 				</section>
 
@@ -130,24 +129,85 @@
 								<div id="content" class="col-8 col-12-medium">
 
 									<!-- Post -->
-										<article class="box post">
+										<!-- <article class="box post">
 											<header>
-												<h2><a href="#">I don’t want to say <strong>it’s the aliens</strong> ...<br />
-												but it’s the aliens.</a></h2>
+												<h2><strong>Featured Post</strong></h2>
 											</header>
-											<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>I mean isn't it possible?</h3>
-											<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-											magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-											mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-											Curabitur leo nibh, rutrum eu malesuada in tristique.</p>
+											<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a> -->
+
+<h3><strong>Ruby and Javascript - Scope, Variables, Functions</strong></h3>
+<p>
+	There's quite a few differences in how scope, variables, and functions are treated in Ruby versus in Javascript. To start off, Javascript uses lexical scoping, meaning that inner functions/closures have access to outter functions further up its scope chain.
+</p>
+<p>
+<pre class="code">
+function outter() {
+  let outterVar = 'hello';
+  function innerVar() {
+    console.log(outterVar);
+  }
+  innerVar();
+}
+
+outter() // hello
+</pre>
+</p>
+<p>
+Ruby methods, on the other hand, are closed off from all information outside of it. Inside Ruby methods, the only variables in scope are the ones declared within the function, and those passed through in arguments.
+</p>
+<p>
+<pre class="code">
+outterVariable = 'hello'
+
+def any_method
+  puts outterVariable
+end
+
+any_method // undefined local variable or method `outterVariable'
+</pre>
+</p>
+
+In Ruby, variables can be created in arguments, but methods can not. Not to mention it just looks really awkward with Ruby's def/end syntax. This clearly isn't how Ruby was intended to be used.
+
+<p>
+<pre>
+def say_word(word)
+  puts word
+end
+
+say_word(word =  'hello') // hello
+
+say_word(def word 'hello' end) // syntax error
+</pre>
+</p>
+<p>
+In Javascript, however, functions are treated as first-class citizens, which is just a fancy way of saying that they are treated just like other plain variable. This enables functions to be declared and passed as arguments (We're going to be using an immediately invoked function so its value is passed instead of the function itself).
+</p>
+
+<p>
+<pre class="code">
+function sayWord(word) {
+  console.log(word)
+}
+
+sayWord( word = 'hello') // hello
+
+sayWord( (function(){return 'hello'})() ) // hello
+</pre>
+</p>
+
+
+<p> Javascript’s arguments are also optional, whereas Ruby’s arguments are required and will bring up and error if you don’t provide them. As we can see, these languages take different approaches to writing code, each with their own style and personality.
+</p>
+<p>
+When it comes to functions and variable scoping, Javascript is flexible ( maybe too flexible- don't get me started on its type coercion); it can create functions within arguments, and it allows all functions to access all variables above it in its scope chain. This freedom may come at a price, however, as variables can change and shift unexpectedly, as functions can easily get their hands on them.
+</p>
+<p>
+On the other hand, Ruby is strict. Many people analogize Ruby methods to a living cell; self-reliant and only filtering in explicitly necessary outside resources through its cell walls. Planned, and methodical, this approach may seem limiting, but is less prone to variable mishaps, as every method is self-contained, and you're never unsure about a variable's value.
+</p>
+
 											<ul class="actions">
-												<li><a href="#" class="button icon fa-file">Continue Reading</a></li>
+												<li><a href="http://kevinchi.info/" class="button icon fa-file" target="_blank">Check Out My Blog</a></li>
 											</ul>
 										</article>
 
