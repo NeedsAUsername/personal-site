@@ -8,6 +8,9 @@
 	border-radius: 3px;
   font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 	font-size: .8em;
+	overflow: scroll;
+	max-width: 90%;
+	margin: 0;
 }
 
 
