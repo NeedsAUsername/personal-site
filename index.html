@@ -63,7 +63,7 @@
 
 								<!-- Feature -->
 									<section>
-										<div id="restaurant-picker" class="image featured"><img src="images/restaurant-picker-1.png" alt="" /></div>
+										<div id="restaurant-picker" class="image featured"><img onmouseenter="switchImage(this, 'images/restaurant-picker-2.png')" onmouseleave="switchImage(this, 'images/restaurant-picker-1.png')" src="images/restaurant-picker-1.png" alt="" /></div>
 										<header>
 											<h3><a href="https://restaurant-picker-react.herokuapp.com/"target="_blank"><strong>Restaurant Picker</strong></a></h3>
 										</header>
@@ -76,7 +76,7 @@
 
 								<!-- Feature -->
 									<section>
-										<div id="workout-journal" class="image featured"><img src="images/workout-journal-1.png" alt="" /></div>
+										<div id="workout-journal" class="image featured"><img onmouseenter="switchImage(this, 'images/workout-journal-2.png')" onmouseleave="switchImage(this, 'images/workout-journal-1.png')" src="images/workout-journal-1.png" alt="" /></div>
 										<header>
 											<h3><a href="https://workout-programs-journal.herokuapp.com/"><strong>Workout Journal</strong></h3></a>
 										</header>
@@ -277,6 +277,7 @@ On the other hand, Ruby is strict. Many people analogize Ruby methods to a livin
 		</div>
 
 		<!-- Scripts -->
+			<script src="index.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
