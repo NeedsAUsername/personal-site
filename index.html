@@ -40,13 +40,17 @@
 										</ul>
 									</li>
 									<li>
-										<a href="#banner">Featured Blog Post</a>
+										<a href="#banner" class="icon fa-pencil"><span>Featured Blog Post</span></a>
+									</li>
+									<li>
+										<a href="#footer" class="icon fa-info-circle"><span>Links</span></a>
 									</li>
 								</ul>
 							</nav>
 
 					</div>
 				</section>
+
 
 			<!-- Features -->
 				<section id="features">
@@ -140,19 +144,19 @@
 
 <h3><strong>Ruby and Javascript - Scope, Variables, Functions</strong></h3>
 <p>
-	There's quite a few differences in how scope, variables, and functions are treated in Ruby versus in Javascript. To start off, Javascript uses lexical scoping, meaning that inner functions/closures have access to outter functions further up its scope chain.
+	There's quite a few differences in how scope, variables, and functions are treated in Ruby versus in Javascript. To start off, Javascript uses lexical scoping, meaning that inner functions/closures have access to outer functions further up its scope chain.
 </p>
 <p>
 <pre class="code">
-function outter() {
-  let outterVar = 'hello';
+function outer() {
+  let outerVar = 'hello';
   function innerVar() {
-    console.log(outterVar);
+    console.log(outerVar);
   }
   innerVar();
 }
 
-outter() // hello
+outer() // hello
 </pre>
 </p>
 <p>
@@ -160,13 +164,13 @@ Ruby methods, on the other hand, are closed off from all information outside of 
 </p>
 <p>
 <pre class="code">
-outterVariable = 'hello'
+outerVariable = 'hello'
 
 def any_method
-  puts outterVariable
+  puts outerVariable
 end
 
-any_method // undefined local variable or method `outterVariable'
+any_method // undefined local variable or method `outerVariable'
 </pre>
 </p>
 <p>
@@ -213,12 +217,9 @@ On the other hand, Ruby is strict. Many people analogize Ruby methods to a livin
 												<li><a href="kevinchi.info" class="button icon fa-file" target="_blank">Check Out My Blog For More</a></li>
 											</ul>
 										</article>
-
-
-
 									<!-- Post -->
 										<article class="box post">
-											<header>
+											<header class="about">
 												<h3><strong>About Me</strong></h3>
 											</header>
 											<p><strong>Coding started out as just a hobby.</strong> I wanted to code out my own games and dedicated myself to it the summer between Junior and Senior year of college. I taught myself Python, and built a CLI RPG game. I then followed youtube tutorials to build a classic space shooter game, and a platformer game using Pygame.
@@ -247,10 +248,13 @@ On the other hand, Ruby is strict. Many people analogize Ruby methods to a livin
 										<div class="col-6 col-12-small">
 											<ul class="icons">
 												<li class="icon fa-linkedin">
-													<a href="https://www.linkedin.com/in/kevin-chi-a87900108/">Github</a>
+													<a href="https://www.linkedin.com/in/kevin-chi-a87900108/" target="_blank">LinkedIn</a>
 												</li>
 												<li class="icon fa-github">
-													<a href="https://github.com/NeedsAUsername">LinkedIn</a>
+													<a href="https://github.com/NeedsAUsername" target="_blank">Github</a>
+												</li>
+												<li class="icon fa-pencil">
+													<a href="kevinchi.info" target="_blank">Blog</a>
 												</li>
 												<li class="icon fa-arrow-down">
 													<a href="images/Chi_Kevin_Resume.pdf">Resume</a>
