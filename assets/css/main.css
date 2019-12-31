@@ -1542,6 +1542,9 @@ input, select, textarea {
 				width: auto;
 			}
 
+		.project-image {
+			min-height: 300px
+		}
 /* List */
 
 	ul {
