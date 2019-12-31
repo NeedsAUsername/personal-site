@@ -1512,6 +1512,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			min-height: 300px;
 		}
 
 		.image.fit {
@@ -1541,10 +1542,6 @@ input, select, textarea {
 				margin: 0 auto;
 				width: auto;
 			}
-
-		.project-image {
-			min-height: 300px;
-		}
 /* List */
 
 	ul {
